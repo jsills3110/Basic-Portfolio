@@ -1,5 +1,8 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: #4aaaa5;
+    background-image: url("../images/dark_embroidery.png");
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
@@ -26,9 +29,15 @@ h2 {
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+hr {
+    border: 2px solid #dddddd;
+}
+
+/*Need to edit this to be MAX width of 960px (margin+border+padding+content)*/
 .main-content {
     margin: 0 auto;
     width: 960px;
+    padding: 20px;
     background-color: #ffffff;
     border-color: #dddddd;
 }
