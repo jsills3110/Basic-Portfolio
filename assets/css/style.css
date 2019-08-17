@@ -18,11 +18,11 @@ footer {
 /*h1 is used on the main Header.*/
 h1 {
     color: #ffffff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 /*h2 is used as the heading for all pages.*/
 h2 {
     color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
