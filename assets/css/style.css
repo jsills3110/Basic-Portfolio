@@ -1,0 +1,28 @@
+body {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+/*Main Header*/
+header {
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+footer {
+    background-color: #666666;
+}
+
+/*h1 is used on the main Header.*/
+h1 {
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/*h2 is used as the heading for all pages.*/
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
