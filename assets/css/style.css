@@ -1,3 +1,5 @@
+/*On the body, zero out the margin and padding so the content spreads out to the full viewport.
+  Set the background color, image, font family and color for all text in the body.*/
 body {
     margin: 0;
     padding: 0;
@@ -7,22 +9,22 @@ body {
     color: #777777;
 }
 
-.page-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-/*Main Header*/
+/*On the header, set the position to fixed so it does not scroll with the content. Position it 
+  at the top of the viewport. Set the width so that it spreads across the entire viewport. Set 
+  the background color and border color.*/
 header {
-    margin: 0;
-    padding: 0;
     position: fixed;
     top: 0;
+    margin: 0;
+    padding: 0;
     width: 100%;
     background-color: #ffffff;
     border-color: #cccccc;
 }
 
+/*On the footer, set the position to absolute so that it's position is dependent on the page
+  content container. Position it at the bottom of the content. Set the width so that it spreads 
+  across the entire viewport. Set the background color and height.*/
 footer {
     position: absolute;
     bottom: 0;
@@ -37,20 +39,68 @@ h1 {
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
-/*h2 is used as the heading for all pages.*/
+/*h2 is used as the heading for all pages, in the content below the header.*/
 h2 {
     color: #4aaaa5;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+/*hr is used underneath the h2 header of all pages.*/
 hr {
     border: 2px solid #dddddd;
 }
 
+/*Set the line height of all paragraphs to 1.5.*/
 p {
     line-height: 1.5;
 }
 
+/*Zero out the margin and padding that is default on ul, so that positioning is custom.*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Page container contains all of the content on the page: header, content, footer. Set the 
+  position relative and the minimum height to 100% of the viewport.*/
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/*On the title container, float the container left, set the width and background color, and 
+  align the text center.*/
+.title-div {
+    float: left;
+    width: 300px;
+    background-color: #4aaaa5;
+    text-align: center;
+}
+
+/*The clearfix hack is used in multiple locations to clear float when needed.*/
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/*On the menu items, float the item left and remove the bullet point on the item.*/
+.menu-item {
+    float: left;
+    list-style-type: none;
+}
+
+/*On the menu item separators (bars), float the separator left, set the margin left and 
+  right to push it away from the menu items, and set the line height to 1 to negate the 
+  earlier paragraph line height setting.*/
+.menu-item-separator {
+    float: left;
+    margin: 0 10px 0 10px;
+    line-height: 1;
+}
+
+/*On the main content, center the content, push the content down below the header, set the 
+  width, padding, background color, and border color.*/
 .main-content {
     margin: 0 auto;
     margin-top: 125px;
@@ -60,40 +110,22 @@ p {
     border-color: #dddddd;
 }
 
-.clearfix::after {
-    content: " ";
-    display: block;
-    clear: both;
-}
-
-.title-div {
-    float: left;
-    width: 300px;
-    top: 0;
-    background-color: #4aaaa5;
-    text-align: center;
-}
-
+/*On the menu container, set float right and set the margin-top and margin-right to position 
+  it on the header.*/
 #menu {
-    padding-top: 10px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 16.67%;
 }
 
-.menu-item {
-    float: left;
-    list-style-type: none;
-    line-height: 1.5;
-}
-
-.menu-item-separator {
-    float: left;
-    margin: 0 10px 0 10px;
-}
-
+/*On the about image, set float left and set the margin so it pushes the paragraph content 
+  away from it a bit.*/
 #about-image {
     float: left;
     margin: 20px 20px 20px 0px;
 }
 
+/*On the first part of the about paragraph, set the margin-top to push it down from the divider.*/
 #about-pp {
-    margin-top: 26px;
+    margin-top: 25px;
 }
