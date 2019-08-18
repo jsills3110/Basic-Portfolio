@@ -51,7 +51,6 @@ p {
     line-height: 1.5;
 }
 
-/*Need to edit this to be MAX width of 960px (margin+border+padding+content)*/
 .main-content {
     margin: 0 auto;
     margin-top: 125px;
@@ -69,13 +68,25 @@ p {
 
 .title-div {
     float: left;
-    width: 200px;
+    width: 300px;
+    top: 0;
     background-color: #4aaaa5;
+    text-align: center;
+}
+
+#menu {
+    padding-top: 10px;
 }
 
 .menu-item {
     float: left;
     list-style-type: none;
+    line-height: 1.5;
+}
+
+.menu-item-separator {
+    float: left;
+    margin: 0 10px 0 10px;
 }
 
 #about-image {
