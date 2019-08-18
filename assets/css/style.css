@@ -52,6 +52,11 @@ p {
     clear: both;
 }
 
+.title-div {
+    width: 200px;
+    background-color: #4aaaa5;
+}
+
 #about-image {
     float: left;
     margin-top: 20px;
