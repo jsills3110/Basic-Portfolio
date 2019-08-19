@@ -10,31 +10,30 @@ body {
 }
 
 /*On the header, set the position to fixed so it does not scroll with the content. Position it 
-  at the top of the viewport. Set the width so that it spreads across the entire viewport. Set 
-  the background color and border color.*/
+  at the top of the viewport. Set the width so that it spreads across the entire viewport and 
+  set the height. Set the background color and border color.*/
 header {
     position: fixed;
     top: 0;
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 80px;
     background-color: #ffffff;
     border-color: #cccccc;
 }
 
-/*On the footer, set the position to absolute so that it's position is dependent on the page
-  content container. Position it at the bottom of the content. Set the width so that it spreads 
-  across the entire viewport. Set the background color and height.*/
+/*On the footer, set the position to absolute so that its position is dependent on the 
+  page-container div. Position it at the bottom of the content. Set the width so that it 
+  spreads across the entire viewport. Set the height and background color.*/
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
     background-color: #666666;
+    text-align: center;
 }
 
-/*h1 is used on the main Header.*/
+/*h1 is used on the main Header as the title for the website.*/
 h1 {
     color: #ffffff;
     font-family: Georgia, Times, 'Times New Roman', serif;
@@ -73,7 +72,7 @@ ul {
   align the text center.*/
 .title-div {
     float: left;
-    width: 300px;
+    width: 250px;
     background-color: #4aaaa5;
     text-align: center;
 }
@@ -100,12 +99,12 @@ ul {
     line-height: 1;
 }
 
-/*On the main content, center the content, push the content down below the header, set the 
-  width, padding, background color, and border color.*/
+/*On the main content, center the content horizontally, push the content down below the 
+  header, set the width, padding, background color, and border color.*/
 .main-content {
     margin: 125px auto 105px;
     width: 920px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     background-color: #ffffff;
     border-color: #dddddd;
 }
