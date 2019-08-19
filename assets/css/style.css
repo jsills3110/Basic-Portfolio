@@ -22,6 +22,23 @@ header {
     border-color: #cccccc;
 }
 
+/*Set the top margin of the form so that it is pushed down from the divider above it.*/
+form {
+    margin-top: 20px;
+}
+
+/*Set the margin of the text inputs and textarea on the form so that they are pushed down from 
+  whatever is above them.*/
+input, textarea {
+    margin-top: 5px;
+}
+
+/*Set the width of the text input boxes to the width of their container, but compensate for the 
+  width of their borders.*/
+input {
+    width: 916px;
+}
+
 /*On the footer, set the position to absolute so that its position is dependent on the 
   page-container div. Position it at the bottom of the content. Set the width so that it 
   spreads across the entire viewport. Set the height and background color.*/
@@ -35,6 +52,8 @@ header {
     text-align: center;
 }
 
+/*On the header container, center the container and set the width. This allows the title 
+  and menu to be aligned with the main content.*/
 #header-container {
     margin: 0 auto;
     width: 960px;
@@ -68,6 +87,7 @@ ul {
     padding: 0;
 }
 
+/*Set the color and decoration of links.*/
 a {
     color: #777777;
     text-decoration: none;
