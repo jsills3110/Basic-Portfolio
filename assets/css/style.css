@@ -30,13 +30,29 @@ form {
 /*Set the margin of the text inputs and textarea on the form so that they are pushed down from 
   whatever is above them.*/
 input, textarea {
-    margin-top: 5px;
+    margin-top: 3px;
+    padding: 0;
+}
+
+/*Set the width of the textarea to the width of its container, but compensate for the 
+  width of its border.*/
+textarea {
+    width: 918px;
 }
 
 /*Set the width of the text input boxes to the width of their container, but compensate for the 
   width of their borders.*/
 input {
     width: 916px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    border: none;
+    padding: 6px 22px;
 }
 
 /*On the footer, set the position to absolute so that its position is dependent on the 
