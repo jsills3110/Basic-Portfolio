@@ -62,7 +62,7 @@ ul {
 }
 
 /*Page container contains all of the content on the page: header, content, footer. Set the 
-  position relative and the minimum height to 100% of the viewport.*/
+  position relative and the height to 100%.*/
 .page-container {
     position: relative;
     height: 100%;
