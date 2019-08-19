@@ -22,63 +22,22 @@ header {
     border-color: #cccccc;
 }
 
-/*Set the top margin of the form so that it is pushed down from the divider above it.*/
-form {
-    margin-top: 20px;
-}
-
-/*Set the margin of the text inputs and textarea on the form so that they are pushed down from 
-  whatever is above them.*/
-input, textarea {
-    margin-top: 3px;
-    padding: 0;
-}
-
-/*Set the width of the textarea to the width of its container, but compensate for the 
-  width of its border.*/
-textarea {
-    width: 918px;
-}
-
-/*Set the width of the text input boxes to the width of their container, but compensate for the 
-  width of their borders.*/
-input {
-    width: 916px;
-}
-
-button {
-    margin-top: 10px;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    border: none;
-    padding: 6px 22px;
-}
-
-/*On the footer, set the position to absolute so that its position is dependent on the 
-  page-container div. Position it at the bottom of the content. Set the width so that it 
-  spreads across the entire viewport. Set the height and background color.*/
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    color: #cccccc;
-    background-color: #666666;
-    text-align: center;
-}
-
-/*On the header container, center the container and set the width. This allows the title 
-  and menu to be aligned with the main content.*/
-#header-container {
-    margin: 0 auto;
-    width: 960px;
-}
-
 /*h1 is used on the main Header as the title for the website.*/
 h1 {
     color: #ffffff;
     font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Zero out the margin and padding that is default on ul, so that positioning is custom.*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*Set the color and decoration of links.*/
+a {
+  color: #777777;
+  text-decoration: none;
 }
 
 /*h2 is used as the heading for all pages, in the content below the header.*/
@@ -97,32 +56,51 @@ p {
     line-height: 1.5;
 }
 
-/*Zero out the margin and padding that is default on ul, so that positioning is custom.*/
-ul {
-    margin: 0;
-    padding: 0;
+/*Set the top margin of the form so that it is pushed down from the divider above it.*/
+form {
+  margin-top: 20px;
 }
 
-/*Set the color and decoration of links.*/
-a {
-    color: #777777;
-    text-decoration: none;
+/*Set the margin of the text inputs and textarea on the form so that they are pushed down from 
+whatever is above them.*/
+input, textarea {
+  margin-top: 3px;
+  padding: 0;
 }
 
-/*Page container contains all of the content on the page: header, content, footer. Set the 
-  position relative and the height to 100%.*/
-.page-container {
-    position: relative;
-    height: 100%;
-    min-height: 100vh;
+/*Set the width of the text input boxes to the width of their container, but compensate for the 
+width of their borders.*/
+input {
+  width: 916px;
 }
 
-/*On the title container, float the container left, set the width and background color, and 
-  align the text center.*/
-.title-div {
-    float: left;
-    width: 250px;
-    background-color: #4aaaa5;
+/*Set the width of the textarea to the width of its container, but compensate for the 
+width of its border.*/
+textarea {
+  width: 918px;
+}
+
+/*Format the button on the form on the Contact page; set the margin-top, background color, font 
+color, font-family, border, and padding.*/
+button {
+  margin-top: 10px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  border: none;
+  padding: 6px 22px;
+}
+
+/*On the footer, set the position to absolute so that its position is dependent on the 
+  page-container div. Position it at the bottom of the content. Set the width so that it 
+  spreads across the entire viewport. Set the height and background color.*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: #cccccc;
+    background-color: #666666;
     text-align: center;
 }
 
@@ -148,9 +126,33 @@ a {
     line-height: 1;
 }
 
+/*Page container contains all of the content on the page: header, content, footer. Set the 
+  position relative and the height to 100%.*/
+#page-container {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+}
+
+/*On the header container, center the container and set the width. This allows the title 
+  and menu to be aligned with the main content.*/
+#header-container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*On the title container, float the container left, set the width and background color, and 
+  align the text center.*/
+#title-div {
+    float: left;
+    width: 250px;
+    background-color: #4aaaa5;
+    text-align: center;
+}
+
 /*On the main content, center the content horizontally, push the content down below the 
   header, set the width, padding, background color, and border color.*/
-.main-content {
+#main-content {
     margin: 125px auto 105px;
     width: 920px;
     padding: 20px;
