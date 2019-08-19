@@ -30,8 +30,14 @@ header {
     bottom: 0;
     width: 100%;
     height: 60px;
+    color: #cccccc;
     background-color: #666666;
     text-align: center;
+}
+
+#header-container {
+    margin: 0 auto;
+    width: 960px;
 }
 
 /*h1 is used on the main Header as the title for the website.*/
@@ -60,6 +66,11 @@ p {
 ul {
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
 }
 
 /*Page container contains all of the content on the page: header, content, footer. Set the 
@@ -116,7 +127,6 @@ ul {
 #menu {
     float: right;
     margin-top: 30px;
-    margin-right: 16.67%;
 }
 
 /*On the about image, set float left and set the margin so it pushes the paragraph content 
