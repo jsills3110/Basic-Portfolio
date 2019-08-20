@@ -1,4 +1,4 @@
-/*On the body, zero out the margin and padding so the content spreads out to the full viewport.
+/*For the body, zero out the margin and padding so the content spreads out to the full viewport.
   Set the background color, image, font family and color for all text in the body.*/
 body {
   margin: 0;
@@ -10,7 +10,7 @@ body {
   color: #777777;
 }
 
-/*On the header, set the position to fixed so it does not scroll with the content. Position it 
+/*For the header, set the position to fixed so it does not scroll with the content. Position it 
   at the top of the viewport. Set the width so that it spreads across the entire viewport and 
   set the height. Set the background color and border color.*/
 header {
@@ -23,10 +23,12 @@ header {
   z-index: 2;
 }
 
-h1, h2, h3 {
+/*Set all heading fonts to the same font-family.*/
+h1, h2, h3, h6 {
   font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+/*Set h1 and h3 to the same font color.*/
 h1, h3 {
   color: #ffffff;
 }
@@ -36,6 +38,7 @@ h2 {
   color: #4aaaa5;
 }
 
+/*h3 is used as the heading for the projects in the portfolio gallery.*/
 h3 {
   margin: 0;
   padding-top: 10px;
@@ -43,6 +46,7 @@ h3 {
   font-weight: lighter;
 }
 
+/*h6 is used in the footer.*/
 h6 {
   margin: 0;
   padding-top: 30px;
@@ -141,16 +145,17 @@ footer {
   line-height: 1;
 }
 
-.project-row {
-  width: 500px;
-  margin: 30px 0;
+.project-div {
+  width: 600px;
+  margin: 30px 0 0;
 }
 
 .project-photo {
   position: relative;
   float: left;
-  width: 200px;
+  width: 250px;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .project-title {
