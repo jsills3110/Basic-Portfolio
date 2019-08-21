@@ -64,6 +64,7 @@ a {
   text-decoration: none;
 }
 
+/*Set the color and text-decoration of links when they are hovered over.*/
 a:hover {
   color: #666666;
   text-decoration: underline;
@@ -114,6 +115,7 @@ button {
   padding: 6px 22px;
 }
 
+/*Set the color, font weight, and padding of buttons when they are hovered over.*/
 button:hover {
   background-color: #666666;
   font-weight: bold;
